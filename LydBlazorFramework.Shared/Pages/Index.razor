@@ -1,0 +1,38 @@
+﻿@page "/"
+
+
+ <MRow>
+     <MCol Cols="3">
+        <MCard>
+            <MCardText>
+                <MButton Depressed Color="primary">
+                     Primary
+                 </MButton>
+                 <MTextField @bind-Value="_message"
+                             Label="Outlined"
+                            Outlined
+                            Clearable>
+                </MTextField>
+                <MTextField @bind-Value="_message"
+                            Label="Outlined"
+                            Outlined
+                            Clearable>
+                </MTextField>
+            </MCardText>
+         </MCard>
+     </MCol>
+     <MCol Cols="3">
+         <MCard>
+             <MCardText>
+                 <MRow Justify="@JustifyTypes.Center">
+                     <MDatePicker @bind-Value="_picker"></MDatePicker>
+                 </MRow>
+             </MCardText>
+         </MCard>
+     </MCol>
+ </MRow>
+
+ @code {
+    private DateOnly _picker = DateOnly.FromDateTime(DateTime.Now);
+    private string _message = "";
+}

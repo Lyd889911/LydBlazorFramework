@@ -1,0 +1,12 @@
+{
+  "author": "lyd",
+  "classifications": [ "Web/WPF/Winform" ],
+  "name": "LydBlazorFramework",
+  "identity": "LydBlazorFrameworkTemplate",
+  "shortName": "lydblazor",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "LydBlazorFramework"
+}
